@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>《剑指 offer》 跳台阶</title>
+      <link href="/2019/12/14/jianzhi-offer-01/"/>
+      <url>/2019/12/14/jianzhi-offer-01/</url>
+      
+        <content type="html"><![CDATA[<h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><p>一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法（先后次序不同算不同的结果）。</p><h1 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h1><p>对于第n个台阶来说，只能从n-1或者n-2的台阶跳上来，所以<br><code>F(n) = F(n-1) + F(n-2)</code><br>斐波拉契数序列，初始条件<br>n=1:只能一种方法<br>n=2:两种<br>递归一下就好了</p><pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">jumpFloor</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">{</span>     <span class="token keyword">if</span><span class="token punctuation">(</span>number <span class="token operator">&lt;=</span> <span class="token number">0</span><span class="token punctuation">)</span>            <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>number <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>            <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>        <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>number <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span>            <span class="token keyword">return</span> <span class="token number">2</span><span class="token punctuation">;</span>        <span class="token keyword">else</span>            <span class="token keyword">return</span> <span class="token function">jumpFloor</span><span class="token punctuation">(</span>number<span class="token number">-1</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token function">jumpFloor</span><span class="token punctuation">(</span>number<span class="token number">-2</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 刷题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷题 </tag>
+            
+            <tag> 递归 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>二零一七年终总结</title>
       <link href="/2018/01/22/2017-conclusion/"/>
       <url>/2018/01/22/2017-conclusion/</url>
