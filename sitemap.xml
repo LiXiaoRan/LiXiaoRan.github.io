@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://lixiaoran.github.io/tags/index.html</loc>
+    <loc>https://lixiaoran.github.io/about/index.html</loc>
     
-    <lastmod>2019-12-14T05:22:20.156Z</lastmod>
+    <lastmod>2019-12-14T07:12:49.271Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://lixiaoran.github.io/about/index.html</loc>
+    <loc>https://lixiaoran.github.io/contact/index.html</loc>
     
-    <lastmod>2019-12-14T05:22:20.155Z</lastmod>
+    <lastmod>2019-12-14T07:10:59.999Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://lixiaoran.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-12-14T05:22:20.156Z</lastmod>
     
   </url>
   
@@ -24,13 +31,6 @@
   
   <url>
     <loc>https://lixiaoran.github.io/categories/index.html</loc>
-    
-    <lastmod>2019-12-14T05:22:20.155Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://lixiaoran.github.io/contact/index.html</loc>
     
     <lastmod>2019-12-14T05:22:20.155Z</lastmod>
     
