@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>《剑指 offer》 和为s的两个数字</title>
+      <link href="/2019/12/21/jianzhi-offer2/"/>
+      <url>/2019/12/21/jianzhi-offer2/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>输入一个递增排序的数组和一个数字S，在数组中查找两个数，使得他们的和正好是S，如果有多对数字的和等于S，输出两个数的乘积最小的。</p><h2 id="输出描述"><a href="#输出描述" class="headerlink" title="输出描述:"></a>输出描述:</h2><p>对应每个测试案例，输出两个数，小的先输出。</p><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>数列满足递增，设两个头尾两个指针i和j，<br>若ai + aj == sum，就是答案（相差越远乘积越小）<br>若ai + aj &gt; sum，aj肯定不是答案之一（前面已得出 i 前面的数已是不可能），j -= 1<br>若ai + aj &lt; sum，ai肯定不是答案之一（前面已得出 j 后面的数已是不可能），i += 1<br>O(n)</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">FindNumbersWithSum</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> sum<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">// write code here</span>    <span class="token keyword">let</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>    <span class="token keyword">let</span> j<span class="token operator">=</span>array<span class="token punctuation">.</span>length<span class="token number">-1</span><span class="token punctuation">;</span>    <span class="token keyword">let</span> res<span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>    <span class="token keyword">while</span><span class="token punctuation">(</span>i<span class="token operator">&lt;</span>j<span class="token punctuation">)</span><span class="token punctuation">{</span>        <span class="token keyword">let</span> temp<span class="token operator">=</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token operator">+</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>        <span class="token keyword">if</span><span class="token punctuation">(</span>temp<span class="token operator">==</span>sum<span class="token punctuation">)</span><span class="token punctuation">{</span>            res<span class="token operator">=</span><span class="token punctuation">[</span>array<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>array<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>            <span class="token keyword">break</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>i<span class="token operator">&lt;</span>j<span class="token operator">&amp;&amp;</span>temp<span class="token operator">></span>sum<span class="token punctuation">)</span><span class="token punctuation">{</span>            j<span class="token operator">--</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>            i<span class="token operator">++</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> res<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 刷题 </category>
+          
+          <category> 剑指 offer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷题 </tag>
+            
+            <tag> 递归 </tag>
+            
+            <tag> 数学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>这个博客是怎么来的</title>
       <link href="/2019/12/14/hello-world/"/>
       <url>/2019/12/14/hello-world/</url>
@@ -39,6 +70,8 @@
       <categories>
           
           <category> 刷题 </category>
+          
+          <category> 剑指 offer </category>
           
       </categories>
       
