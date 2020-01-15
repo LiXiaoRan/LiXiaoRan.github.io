@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>《剑指 offer》不用加减乘除做加法</title>
+      <link href="/2020/01/15/jianzhi-offer-07/"/>
+      <url>/2020/01/15/jianzhi-offer-07/</url>
+      
+        <content type="html"><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>写一个函数，求两个整数之和，要求在函数体内不得使用+、-、*、/四则运算符号。</p><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><p>两个数异或：相当于每一位相加，而不考虑进位；<br>两个数相与，并左移一位：相当于求得进位；<br>将上述两步的结果相加</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">Add</span><span class="token punctuation">(</span>num1<span class="token punctuation">,</span> num2<span class="token punctuation">)</span><span class="token punctuation">{</span>    <span class="token comment" spellcheck="true">// write code here</span>    <span class="token keyword">while</span><span class="token punctuation">(</span> num2<span class="token operator">!=</span><span class="token number">0</span> <span class="token punctuation">)</span><span class="token punctuation">{</span>        <span class="token keyword">let</span> sum <span class="token operator">=</span> num1 <span class="token operator">^</span> num2<span class="token punctuation">;</span>        <span class="token keyword">let</span> carray <span class="token operator">=</span> <span class="token punctuation">(</span>num1 <span class="token operator">&amp;</span> num2<span class="token punctuation">)</span> <span class="token operator">&lt;</span><span class="token operator">&lt;</span> <span class="token number">1</span><span class="token punctuation">;</span>        num1 <span class="token operator">=</span> sum<span class="token punctuation">;</span>        num2 <span class="token operator">=</span> carray<span class="token punctuation">;</span>    <span class="token punctuation">}</span>    <span class="token keyword">return</span> num1<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 刷题 </category>
+          
+          <category> 剑指offer </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷题 </tag>
+            
+            <tag> 进制转化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《剑指 offer》 孩子们的游戏（圆圈中最后剩下的数）</title>
       <link href="/2019/12/29/jianzhi-offer-06/"/>
       <url>/2019/12/29/jianzhi-offer-06/</url>
